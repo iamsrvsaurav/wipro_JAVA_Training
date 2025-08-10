@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;healthcare-appointment-booking-system/src/main/resources/beans.xml&apos; to &apos;beans-healtcare.xml&apos;" description="Rename resource &apos;beans.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/beans.xml" name="beans-healtcare.xml" stamp="1753963565027" updateReferences="true"/>
+</session>

@@ -1,0 +1,17 @@
+package abstract2;
+
+public class BangloreOffice implements DelhiHO {
+
+	@Override
+	public void verifyingDocument() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void issuingPassport() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

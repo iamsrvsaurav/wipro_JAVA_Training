@@ -1,0 +1,10 @@
+package ex;
+
+public class Int1Impl implements Intf1 {
+
+	@Override
+	public void disp() {
+		System.out.println("Display");
+	}
+
+}

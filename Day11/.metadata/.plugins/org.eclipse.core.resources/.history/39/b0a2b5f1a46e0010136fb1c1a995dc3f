@@ -1,0 +1,5 @@
+package congfig;
+
+public class AppConfig {
+
+}

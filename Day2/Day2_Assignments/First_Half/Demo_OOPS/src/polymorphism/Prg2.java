@@ -1,0 +1,23 @@
+package polymorphism;
+
+class Dog{
+	public void sound() {
+		System.out.println("Wo Wo");
+	}
+}
+class Cat extends Dog{
+	@Override
+	public void sound() {
+		System.out.println("Meow");
+	}
+}
+
+public class Prg2 {
+
+	public static void main(String[] args) {
+		Cat cat = new Cat();
+		cat.sound();
+
+	}
+
+}

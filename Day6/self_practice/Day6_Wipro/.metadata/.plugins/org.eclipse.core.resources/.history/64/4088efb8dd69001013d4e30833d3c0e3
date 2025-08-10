@@ -1,0 +1,16 @@
+package com.wipro.lambdaex2;
+
+interface Intf1{
+	String say(String message);
+}
+
+public class Ex5 {
+	public static void main(String[] args) {
+		Intf1 i = (m) -> {
+			String str1 = "I would like to say,";
+			String str2 = str1 + m;
+			return str2;
+		};
+		System.out.println(i.say("Time is presious"));
+	}
+}

@@ -1,0 +1,33 @@
+package com.example.movie_ticket_booking_app.repository;
+
+//package com.yourcompany.movieticketbooking.repository;
+
+import com.yourcompany.movieticketbooking.entity.Movie;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MovieRepository extends JpaRepository<Movie, Long> {}
+
+package com.yourcompany.movieticketbooking.repository;
+
+import com.yourcompany.movieticketbooking.entity.Theater;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TheaterRepository extends JpaRepository<Theater, Long> {}
+
+package com.yourcompany.movieticketbooking.repository;
+
+import com.yourcompany.movieticketbooking.entity.Customer;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CustomerRepository extends JpaRepository<Customer, Long> {}
+
+package com.example.movie_ticket_booking_app.repository;
+
+import com.example.movie_ticket_booking_app.entity.Booking;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface BookingRepository extends JpaRepository<Booking, Long> {
+    List<Booking> findByCustomerId(Long customerId);
+}

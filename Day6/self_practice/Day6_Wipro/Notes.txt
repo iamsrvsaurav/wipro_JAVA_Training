@@ -1,0 +1,464 @@
+Java 8  comes with new features:
+
+Some enhancement in Interace:
+	Default,
+	Static	
+
+1.Lambda Expression
+
+A Lambda expression in java is a concise way to represent an anonymous function(a function without name) that can be passed around as an argument to method or stored in variable.
+
+Key features of Lambda Expression:
+1.Conciseness
+2.Functional Programming : 
+3.Redability:
+
+Ex:
+(parameter) -> expression
+
+Use cases for Lambda Expression:
+1.Functional Interface: 
+2.Stream API :
+3.Event Handling:
+
+
+Method reference:
+
+A method reference in java is a shorthand notation of a lambda expression that calls an existing method.It allows us to refer either static method or non static method.
+
+-------------------------------------------------------------------------------------------------
+Streams in java 8:
+
+Streams in java, introduced in java 8, provide a modern and powerful way to process sequence of elements.
+They allow for functional-style operations on collection of object, enabling operation like filtering, mapping and reducing data in a concise and readable manner.
+
+Key Concepts Of Streams:
+
+1.Streams Vs Collections: While collections store data, streams operate on the data. Streams do not store element, they carry element from a source(Such as a collection, array, or I/O channel) through a pipeline of computational operations.
+
+2.Laziness:Streams are lazy, intermediate operations are not executed until a terminal operation is invoked.This allow for optimization and efficient processing.
+
+3.Immutability:Streams operations do not modify the original data structure, Instead , they produced a new stream or result.
+
+4.Functional Programming: Streams are designed to support functional programming, enabling operations to be expressed in a concise and declarative manner.
+
+Streams Operation:
+
+1.Intermediate Operation:
+Intermediate operations transform a stream into another stream and are lazy, meaning they are not executed until a terminal operation is invoked.
+
+Intermediate Operations Includes:
+
+Method		Description
+1.filter()	Filters elements based on condition
+2.map()		Transforms elements
+3.flatMap()	Flattens nested streams
+4.distinct()	Removes duplicates
+5.sorted()	Sorts elements
+6.peek()	Performs action without altering stream
+7.limit(n)	Limits output to n elements
+8.skip(n)	Skips first n elements
+
+
+2.Terminal Operations:
+Terminal operations produce a result or a side effect and mark the end of the stream processing.
+
+(These trigger stream processing and end the pipeline)
+
+Method		Description
+forEach()	Performs an action for each element
+toArray()	Converts stream to array
+reduce()	Reduces stream to a single value
+collect()	Converts stream to collection
+count()		Counts number of elements
+anyMatch()	Returns true if any element matches
+allMatch()	Returns true if all elements match
+noneMatch()	Returns true if no elements match
+findFirst()	Returns the first element (Optional)
+findAny()	Returns any element (Optional)
+min()		Returns minimum element
+max()		Returns maximum element
+
+
+Benefits of using Streams:
+-Conciseness: Streams allows us to write less code to perform common data processing.
+-Redability: Stream operations can be chained together in a readable manner, making the code easier to understand.
+-Parallelism: Streams can be easily parallelized to take advantages of multi-core processors using parrallelStream()
+----------------------------------------------------------
+1. Stream 
+import java.util.Arrays;
+import java.util.List;
+
+public class StreamExample {
+    public static void main(String[] args) {
+        List<String> names = Arrays.asList("Rakesh", "John", "Anu", "Mary");
+
+        names.stream() // Sequential Stream
+             .filter(name -> name.startsWith("A"))
+             .map(String::toUpperCase)
+             .forEach(System.out::println);
+    }
+}
+2.Parallel stream
+import java.util.Arrays;
+import java.util.List;
+
+public class ParallelStreamExample {
+    public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(10, 20, 30, 40, 50, 60);
+
+        numbers.parallelStream() // Parallel Stream
+               .map(n -> {
+                   System.out.println("Processing: " + n + " in " + Thread.currentThread().getName());
+                   return n * 2;
+               })
+               .forEach(System.out::println);
+    }
+}
+
+
+3.Intermediate Operation
+
+import java.util.*;
+import java.util.stream.*;
+
+public class IntermediateExample {
+    public static void main(String[] args) {
+        List<String> names = Arrays.asList("Rakesh", "Anu", "Anu", "John", "Zara", "Arun");
+
+        // 1. filter()
+        names.stream()
+             .filter(name -> name.startsWith("A"))
+             .forEach(System.out::println);
+
+        // 2. map()
+        names.stream()
+             .map(String::toUpperCase)
+             .forEach(System.out::println);
+
+        // 3. flatMap()
+        List<List<String>> nested = Arrays.asList(Arrays.asList("a", "b"), Arrays.asList("c", "d"));
+        nested.stream()
+              .flatMap(List::stream)
+              .forEach(System.out::print);  // Output: abcd
+
+        // 4. distinct()
+        names.stream()
+             .distinct()
+             .forEach(System.out::println);
+
+        // 5. sorted()
+        names.stream()
+             .sorted()
+             .forEach(System.out::println);
+
+        // 6. peek() - For debugging
+        names.stream()
+             .peek(System.out::println)
+             .map(String::length)
+             .forEach(System.out::println);
+
+        // 7. limit()
+        names.stream()
+             .limit(3)
+             .forEach(System.out::println);
+
+        // 8. skip()
+        names.stream()
+             .skip(2)
+             .forEach(System.out::println);
+    }
+}
+
+
+4. Terminal Operation
+
+import java.util.*;
+import java.util.stream.*;
+
+public class TerminalExample {
+    public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(5, 2, 8, 1, 9);
+
+        // 1. forEach()
+        numbers.stream()
+               .forEach(System.out::println);
+
+        // 2. toArray()
+        Integer[] array = numbers.stream().toArray(Integer[]::new);
+        System.out.println(Arrays.toString(array));
+
+        // 3. reduce()
+        int sum = numbers.stream().reduce(0, Integer::sum);
+        System.out.println("Sum: " + sum);
+
+        // 4. collect()
+        List<Integer> even = numbers.stream()
+                                    .filter(n -> n % 2 == 0)
+                                    .collect(Collectors.toList());
+        System.out.println(even);
+
+        // 5. count()
+        long count = numbers.stream().filter(n -> n > 5).count();
+        System.out.println("Count >5: " + count);
+
+        // 6. anyMatch()
+        boolean hasEven = numbers.stream().anyMatch(n -> n % 2 == 0);
+        System.out.println("Has even: " + hasEven);
+
+        // 7. allMatch()
+        boolean allPositive = numbers.stream().allMatch(n -> n > 0);
+        System.out.println("All positive: " + allPositive);
+
+        // 8. noneMatch()
+        boolean noneNegative = numbers.stream().noneMatch(n -> n < 0);
+        System.out.println("None negative: " + noneNegative);
+
+        // 9. findFirst()
+        Optional<Integer> first = numbers.stream().findFirst();
+        first.ifPresent(n -> System.out.println("First: " + n));
+
+        // 10. findAny()
+        Optional<Integer> any = numbers.stream().findAny();
+        any.ifPresent(n -> System.out.println("Any: " + n));
+
+        // 11. min()
+        Optional<Integer> min = numbers.stream().min(Integer::compareTo);
+        min.ifPresent(n -> System.out.println("Min: " + n));
+
+        // 12. max()
+        Optional<Integer> max = numbers.stream().max(Integer::compareTo);
+        max.ifPresent(n -> System.out.println("Max: " + n));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------
+Optional:
+
+Optional in java is used to check wheather a value expected is present or not.
+
+
+----------------------------------------------------------
+java.time.*;
+
+Class			Description
+LocalDate		Date without time
+LocalTime		Time without date
+LocalDateTime		Date + Time
+ZonedDateTime		Date + Time + TimeZone
+Period			Difference in dates (years/months)
+Duration		
+Difference in time (hours/minutes)
+DateTimeFormatter	Formatting and parsing
+
+
+1. Current Date and Time
+
+LocalDate date = LocalDate.now();
+LocalTime time = LocalTime.now();
+LocalDateTime dateTime = LocalDateTime.now();
+
+System.out.println("Current Date: " + date);
+System.out.println("Current Time: " + time);
+System.out.println("Current DateTime: " + dateTime);
+
+
+---------------------------------------------------
+2. Creating Specific Dates and Times
+
+LocalDate specificDate = LocalDate.of(2025, Month.JULY, 24);
+LocalTime specificTime = LocalTime.of(14, 30);
+LocalDateTime specificDateTime = LocalDateTime.of(2025, 7, 24, 14, 30);
+
+System.out.println("Specific Date: " + specificDate);
+System.out.println("Specific Time: " + specificTime);
+System.out.println("Specific DateTime: " + specificDateTime);
+
+
+-------------------------------------------------------------------
+3. Formatting and Parsing Dates
+
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
+
+String formatted = dateTime.format(formatter);
+System.out.println("Formatted DateTime: " + formatted);
+
+LocalDateTime parsedDate = LocalDateTime.parse("24-07-2025 14:30", formatter);
+System.out.println("Parsed DateTime: " + parsedDate);
+
+
+-------------------------------------------------
+4. Date Arithmetic
+
+LocalDate today = LocalDate.now();
+
+LocalDate nextWeek = today.plusWeeks(1);
+LocalDate lastMonth = today.minusMonths(1);
+
+System.out.println("Next Week: " + nextWeek);
+System.out.println("Last Month: " + lastMonth);
+
+-----------------------------------
+5. Period and Duration
+
+LocalDate startDate = LocalDate.of(2025, 1, 1);
+LocalDate endDate = LocalDate.of(2025, 7, 24);
+
+Period period = Period.between(startDate, endDate);
+System.out.println("Months between: " + period.getMonths() + ", Days: " + period.getDays());
+
+--------------------------------------
+6.Duration (between times):
+
+LocalTime startTime = LocalTime.of(10, 15);
+LocalTime endTime = LocalTime.of(12, 45);
+
+Duration duration = Duration.between(startTime, endTime);
+System.out.println("Duration in minutes: " + duration.toMinutes());
+
+------------------------------
+7.Zoned Date Time (with TimeZone)
+
+ZonedDateTime zonedDateTime = ZonedDateTime.now(ZoneId.of("Asia/Kolkata"));
+System.out.println("Zoned DateTime: " + zonedDateTime);
+
+----------------------------------
+8.Compare Dates
+
+LocalDate d1 = LocalDate.of(2025, 7, 24);
+LocalDate d2 = LocalDate.of(2025, 12, 31);
+
+System.out.println("Is d1 before d2? " + d1.isBefore(d2));
+System.out.println("Is d1 after d2? " + d1.isAfter(d2));
+
+
+-----------------------------------
+
+ExecutorService from the java.util.concurrent package to manage and execute multiple tasks using a thread pool.
+
+1.Basic Example: ExecutorService with Runnable Tasks
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ExecutorServiceExample {
+    public static void main(String[] args) {
+        // Create a thread pool with 3 threads
+        ExecutorService executor = Executors.newFixedThreadPool(3);
+
+        // Submit 5 tasks
+        for (int i = 1; i <= 5; i++) {
+            int taskId = i;
+            executor.submit(() -> {
+                System.out.println("Executing Task " + taskId + " by " + Thread.currentThread().getName());
+                try {
+                    Thread.sleep(1000); // Simulate some work
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
+                System.out.println("Completed Task " + taskId);
+            });
+        }
+
+        // Shutdown the executor
+        executor.shutdown();
+    }
+}
+
+
+2.Example with Callable and Future (returning result):
+
+import java.util.concurrent.*;
+
+public class CallableExample {
+    public static void main(String[] args) throws Exception {
+        ExecutorService executor = Executors.newSingleThreadExecutor();
+
+        // Submit a Callable task that returns a result
+        Callable<String> task = () -> {
+            Thread.sleep(1000);
+            return "Result from Callable";
+        };
+
+        Future<String> future = executor.submit(task);
+
+        System.out.println("Task submitted, waiting for result...");
+        String result = future.get();  // Blocks until result is available
+        System.out.println("Received: " + result);
+
+        executor.shutdown();
+    }
+}
+
+
+3. Example with invokeAll() (execute multiple callables)
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.*;
+
+public class InvokeAllExample {
+    public static void main(String[] args) throws InterruptedException, ExecutionException {
+        ExecutorService executor = Executors.newFixedThreadPool(3);
+
+        List<Callable<String>> tasks = Arrays.asList(
+            () -> "Task 1",
+            () -> "Task 2",
+            () -> "Task 3"
+        );
+
+        List<Future<String>> results = executor.invokeAll(tasks);
+
+        for (Future<String> future : results) {
+            System.out.println("Result: " + future.get());
+        }
+
+        executor.shutdown();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

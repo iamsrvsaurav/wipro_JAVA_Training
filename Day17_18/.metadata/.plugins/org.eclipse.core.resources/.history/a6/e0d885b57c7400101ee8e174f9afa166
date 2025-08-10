@@ -1,0 +1,5 @@
+package com.example.quiz_app.entity;
+
+public class Quiz {
+
+}

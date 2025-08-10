@@ -1,0 +1,27 @@
+package com.model;
+
+//DoctorRepository.java
+import java.time.LocalDate;
+import java.util.*;
+
+public class DoctorRepository {
+ private Map<String, List<LocalDate>> doctorSchedule;
+
+ // Setter for Spring injection
+ public void setDoctorSchedule(Map<String, List<LocalDate>> doctorSchedule) {
+     this.doctorSchedule = doctorSchedule;
+ }
+
+ public boolean isDoctorAvailable(String doctorId, LocalDate date) {
+     List<LocalDate> availableDates = doctorSchedule.get(doctorId);
+     return availableDates != null && availableDates.contains(date);
+ }
+
+ // Optional: remove date when booked (simulate booking)
+ public void bookAppointment(String doctorId, LocalDate date) {
+     if (isDoctorAvailable(doctorId, date)) {
+         doctorSchedule.get(doctorId).remove(date);
+     }
+ }
+}
+

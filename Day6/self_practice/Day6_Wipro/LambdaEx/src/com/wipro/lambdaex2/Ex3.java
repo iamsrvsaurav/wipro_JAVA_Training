@@ -1,0 +1,14 @@
+package com.wipro.lambdaex2;
+interface Calculator{
+	int add(int x,int y);
+}
+public class Ex3 {
+
+	public static void main(String[] args) {
+		Calculator cal = (a,b)->(a+b);
+		int result = cal.add(12,23);
+		System.out.println("Result:"+result);
+
+	}
+
+}

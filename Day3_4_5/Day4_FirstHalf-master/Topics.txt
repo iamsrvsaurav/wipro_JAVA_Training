@@ -1,0 +1,47 @@
+Recap:-
+OOPS Rest
+	Polymorphism, 
+		Overloading and Overriding,
+	Abstraction, 
+	Abstract class, 
+	Interfaces,
+
+	Relationship:
+		Is A and Has A	 
+	 
+	Association,
+	Composition
+
+
+Today's:-
+
+Exception Handling, 
+	Try-Catch Blocks, 
+	types of exceptions, 
+	Throwing Exceptions & catching Multiple Exceptions, 
+	Finally block,
+	custom exceptions, 
+File I/O, 
+Try with Resources, 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class TryWithResourcesExample {
+    public static void main(String[] args) {
+        // Using try-with-resources to read from a file
+        try (BufferedReader reader = new BufferedReader(new FileReader("example.txt"))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (IOException e) {
+            System.err.println("Error reading file: " + e.getMessage());
+        }
+    }
+}
+Error Hierarchy
+
+Solid Design Principles,  JDBC  & NoSQL
+
+Introduction to Collections Framework, List, Set,Map, Queue Interface, Deque Interface, Stack Class, Iterator Interface, Sorting and Searching Collections, Comparators and Comparables, Generics and Type Safety, Concurrent Collections, Synchronization and Thread Safety, Thread Local

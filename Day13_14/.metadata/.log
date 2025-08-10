@@ -1,0 +1,587 @@
+!SESSION 2025-08-04 14:55:18.795 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\iamsr\Desktop\Wipro_Training\Day13
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-04 14:55:57.415
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-04 16:06:18.857
+!MESSAGE Logback config file: C:\Users\iamsr\Desktop\Wipro_Training\Day13\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-08-04 16:06:20.278
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-04 16:06:20.278
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2025-08-04 16:06:21.339
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2025-08-04 16:06:21.374
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY org.eclipse.php.debug.core 4 4 2025-08-04 16:06:34.569
+!MESSAGE Could not open a broadcast port on: 20080 (port might be in use). Please select a different port number
+
+!ENTRY org.eclipse.php.debug.core 4 4 2025-08-04 16:06:34.575
+!MESSAGE The debug port 10137 is in use. Please select a different port for the debugger.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-04 16:06:34.645
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\iamsr'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-04 16:06:35.091
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-04 16:06:35.119
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2025-08-04 16:06:40.545
+!MESSAGE Authorization Server started successfuly
+
+!ENTRY org.eclipse.jface 2 0 2025-08-04 16:06:41.055
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-08-04 16:06:41.055
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.wst.server.launchShortcut.run"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.rap.tools.launch.RAPLaunchShortcut.run"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-08-04 16:06:41.055
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.wst.server.launchShortcut.debug"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-04 16:06:42.411
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.348.0 initialized
+
+!ENTRY org.eclipse.jface 2 0 2025-08-04 17:31:42.615
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-04 17:31:42.909
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/ecommerce-app-rest-api/src/main/resources/application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-04 17:31:43.077
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/ecommerce-app-rest-api/src/main/java/com/example/ecommerce_app_rest_api/controller/AppController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-04 17:31:43.197
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/ecommerce-app-rest-api/src/main/java/com/example/ecommerce_app_rest_api/service/CustomerService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-04 17:31:43.285
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/ecommerce-app-rest-api/src/main/java/com/example/ecommerce_app_rest_api/model/Customer.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-04 17:31:43.404
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/ecommerce-app-rest-api/src/main/java/com/example/ecommerce_app_rest_api/repository/CustomerRepository.java
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-08-04 17:31:43.656
+!MESSAGE Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1748)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:527)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:415)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:409)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:137)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 107 2025-08-04 17:31:43.659
+!MESSAGE Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-08-04 17:31:43.662
+!MESSAGE Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1748)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:527)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:415)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:410)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:137)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 107 2025-08-04 17:31:43.662
+!MESSAGE Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-08-04 17:31:43.677
+!MESSAGE Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1748)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2009)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:380)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:259)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:229)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:411)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:137)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 107 2025-08-04 17:31:43.677
+!MESSAGE Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-04 17:32:20.653
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-04 17:32:20.654
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/ecommerce-app-rest-api/src/main/resources/application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-04 17:32:20.955
+!MESSAGE [Info] Document is null for editor: CustomerService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-04 17:32:20.957
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/ecommerce-app-rest-api/src/main/java/com/example/ecommerce_app_rest_api/service/CustomerService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-04 17:32:21.059
+!MESSAGE [Info] Document is null for editor: Customer.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-04 17:32:21.060
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/ecommerce-app-rest-api/src/main/java/com/example/ecommerce_app_rest_api/model/Customer.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-04 17:32:21.125
+!MESSAGE [Info] Document is null for editor: CustomerRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-04 17:32:21.127
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/ecommerce-app-rest-api/src/main/java/com/example/ecommerce_app_rest_api/repository/CustomerRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-04 17:32:21.322
+!MESSAGE [Info] Document is null for editor: AppController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-04 17:32:21.323
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/ecommerce-app-rest-api/src/main/java/com/example/ecommerce_app_rest_api/controller/AppController.java
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-08-04 17:35:10.606
+!MESSAGE Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1748)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:527)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:415)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.enable(MavenRuntimeClasspathProvider.java:403)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.enable(MavenRuntimeClasspathProvider.java:397)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.enable(MavenRuntimeClasspathProvider.java:427)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:324)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:388)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1053)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
+	at org.eclipse.m2e.core.ui.internal.project.MavenProjectConfigurator$UpdateMavenConfigurationJob.run(MavenProjectConfigurator.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 107 2025-08-04 17:35:10.608
+!MESSAGE Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-08-04 17:35:10.617
+!MESSAGE Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1748)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:527)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:415)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.enable(MavenRuntimeClasspathProvider.java:404)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.enable(MavenRuntimeClasspathProvider.java:397)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.enable(MavenRuntimeClasspathProvider.java:427)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:324)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:388)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1053)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
+	at org.eclipse.m2e.core.ui.internal.project.MavenProjectConfigurator$UpdateMavenConfigurationJob.run(MavenProjectConfigurator.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 107 2025-08-04 17:35:10.619
+!MESSAGE Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-08-04 17:35:10.642
+!MESSAGE Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1748)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2009)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:380)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:259)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:229)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.enable(MavenRuntimeClasspathProvider.java:398)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.enable(MavenRuntimeClasspathProvider.java:427)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:324)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:388)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1053)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
+	at org.eclipse.m2e.core.ui.internal.project.MavenProjectConfigurator$UpdateMavenConfigurationJob.run(MavenProjectConfigurator.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 107 2025-08-04 17:35:10.642
+!MESSAGE Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 09:10:15.243
+!MESSAGE [Info] Document is null for editor: AppController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 09:10:15.248
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Downloads/JAVA-FSD-ANGULAR-main%20(5)/JAVA-FSD-ANGULAR-main/SPRINGBOOT/PROJECTS/ecommerce-app-rest-api/src/main/java/com/example/ecommerce_app_rest_api/controller/AppController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 09:18:38.969
+!MESSAGE [Info] Document is null for editor: Customer.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 09:18:38.970
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/entity/Customer.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 09:18:40.695
+!MESSAGE [Info] Document is null for editor: Theater.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 09:18:40.697
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/entity/Theater.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 11:50:39.167
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/repository/Bookingrepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 11:53:59.772
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/repository/BookingEepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 11:54:21.789
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/repository/BookingRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:21:46.786
+!MESSAGE [Info] Document is null for editor: repository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:21:46.788
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/repository/BookingRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:21:51.053
+!MESSAGE [Info] Document is null for editor: Booking.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:21:51.054
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/entity/Booking.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:21:52.953
+!MESSAGE [Info] Document is null for editor: BookingService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:21:52.954
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/service/BookingService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:22:03.139
+!MESSAGE [Info] Document is null for editor: MovieService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:22:03.139
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/service/MovieService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:22:08.280
+!MESSAGE [Info] Document is null for editor: TheaterRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:22:08.280
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/repository/TheaterRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:22:13.643
+!MESSAGE [Info] Document is null for editor: TheaterService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:22:13.644
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/service/TheaterService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:22:18.819
+!MESSAGE [Info] Document is null for editor: CustomerRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:22:18.820
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/repository/CustomerRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:22:20.834
+!MESSAGE [Info] Document is null for editor: CustomerService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:22:20.835
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/service/CustomerService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:22:23.169
+!MESSAGE [Info] Document is null for editor: MovieTicketBookingAppApplication.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:22:23.169
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/MovieTicketBookingAppApplication.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:22:24.811
+!MESSAGE [Info] Document is null for editor: Theater.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-05 15:22:24.812
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/entity/Theater.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:10.902
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:10.914
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/resources/application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:10.990
+!MESSAGE [Info] Document is null for editor: Movie.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:10.992
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/entity/Movie.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:11.267
+!MESSAGE [Info] Document is null for editor: Customer.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:11.268
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/entity/Customer.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:12.090
+!MESSAGE [Info] Document is null for editor: MovieController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:12.092
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/controller/MovieController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:12.198
+!MESSAGE [Info] Document is null for editor: TheaterController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:12.204
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/controller/TheaterController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:12.469
+!MESSAGE [Info] Document is null for editor: CustomerController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:12.472
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/controller/CustomerController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:12.917
+!MESSAGE [Info] Document is null for editor: BookingController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:12.919
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/controller/BookingController.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:13.075
+!MESSAGE [Info] Document is null for editor: MovieRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:13.078
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/repository/MovieRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:13.269
+!MESSAGE [Info] Document is null for editor: TheaterService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:13.271
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/service/TheaterService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:13.362
+!MESSAGE [Info] Document is null for editor: TheaterRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:13.365
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/repository/TheaterRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:13.467
+!MESSAGE [Info] Document is null for editor: BookingRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:13.470
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/repository/BookingRepository.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:13.711
+!MESSAGE [Info] Document is null for editor: application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:13.714
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Downloads/JAVA-FSD-ANGULAR-main%20(5)/JAVA-FSD-ANGULAR-main/SPRINGBOOT/PROJECTS/ecommerce-app-rest-api/src/main/resources/application.properties
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:13.810
+!MESSAGE [Info] Document is null for editor: Theater.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:13.815
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/entity/Theater.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:13.911
+!MESSAGE [Info] Document is null for editor: Booking.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:13.914
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/entity/Booking.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:14.135
+!MESSAGE [Info] Document is null for editor: ResourceNotFoundException.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:14.138
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/exception/ResourceNotFoundException.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:14.388
+!MESSAGE [Info] Document is null for editor: GlobalExceptionHandler.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:16:14.390
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/exception/GlobalExceptionHandler.java
+!SESSION 2025-08-06 09:19:50.061 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\iamsr\Desktop\Wipro_Training\Day13
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-06 09:20:11.558
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-06 09:21:09.743
+!MESSAGE Logback config file: C:\Users\iamsr\Desktop\Wipro_Training\Day13\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:22:02.843
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-06 09:22:04.319
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.php.debug.core 4 4 2025-08-06 09:22:04.637
+!MESSAGE The debug port 9000 is in use. Please select a different port for the debugger.
+
+!ENTRY org.eclipse.php.debug.core 4 4 2025-08-06 09:22:04.648
+!MESSAGE Could not open a broadcast port on: 20080 (port might be in use). Please select a different port number
+
+!ENTRY org.eclipse.php.debug.core 4 4 2025-08-06 09:22:04.691
+!MESSAGE The debug port 10137 is in use. Please select a different port for the debugger.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-06 09:22:05.395
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\iamsr'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-08-06 09:22:32.410
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.348.0 initialized
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2025-08-06 09:22:51.449
+!MESSAGE Authorization Server started successfuly
+
+!ENTRY org.eclipse.jface 2 0 2025-08-06 09:28:57.811
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-08-06 09:28:57.815
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.wst.server.launchShortcut.run"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.rap.tools.launch.RAPLaunchShortcut.run"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-08-06 09:28:57.815
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.wst.server.launchShortcut.debug"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-07 11:50:24.351
+!MESSAGE [Info] Document is null for editor: GlobalExceptionHandler.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-08-07 11:50:24.364
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///C:/Users/iamsr/Desktop/Wipro_Training/Day13/movie-ticket-booking-app/src/main/java/com/example/movie_ticket_booking_app/exception/GlobalExceptionHandler.java

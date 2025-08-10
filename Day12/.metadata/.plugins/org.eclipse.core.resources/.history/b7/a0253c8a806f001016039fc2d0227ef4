@@ -1,0 +1,15 @@
+body { background: #fff; font-family: Arial, sans-serif; }
+h2, h3 { text-align: center; }
+ul { margin: 0; padding: 0; }
+.container, .card, .skills-box, .contact-box {
+    box-shadow: 4px 4px 8px #aaa;
+    border-radius: 8px; margin: 32px auto; padding: 24px;
+    background: #fff; max-width: 600px; display: flex; flex-direction: row; justify-content: space-between;
+}
+.skills-box { background: #325153; color: #fff; }
+.card { display: flex; flex-direction: row; }
+input, button { margin: 8px 0; padding: 8px; width: 90%; border-radius: 6px; border: 1px solid #aaa; }
+button { background: #aaaefc; color: #fff; border: none; width: 40%; }
+a { text-decoration: none; color: #fff; padding: 16px; display: block; }
+li { display: inline; margin: 0 20px; }
+@charset "UTF-8";

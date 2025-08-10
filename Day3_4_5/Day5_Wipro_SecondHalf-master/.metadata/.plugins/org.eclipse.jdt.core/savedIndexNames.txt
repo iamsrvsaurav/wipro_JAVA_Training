@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+D:\Batches_Mar25\Wipro_July-25\Session\Day5_Java_25-07-25\Demo\Second_Half\.metadata\.plugins\org.eclipse.jdt.core
+566969702.index
+3959091013.index
+1865797976.index

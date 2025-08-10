@@ -1,0 +1,20 @@
+JAVA 8 New Features:-
+Default Methods in Interfaces, 
+Lambda Expressions, 
+Functional Interfaces, 
+Method References,
+Stream API & Operators, 
+Optional Class, 
+Date and Time API (java.time package),
+
+JUNIT:-
+Introduction to Junit, 
+Setting Up Junit, 
+Writing Test Cases, 
+Assertions, 
+Test Fixtures
+Parameterized Tests, 
+Test Suites, 
+Mockito,
+Rest Assured, 
+Code coverage

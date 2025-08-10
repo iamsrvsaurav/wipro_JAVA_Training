@@ -1,0 +1,210 @@
+Application - used to perform some task 
+Ex -> Application Software -  Word, Excel, Calculator, Browser
+      System Software - Operating OS, Networking tools
+
+
+Using Java Programming Language 
+	- Core Java Application or Desktop -> o/p will console window - Core ava
+	- Web Application -> o/p will be on the Browser -> Spring Framework (Back End- main logic , business logic ) , FrontEnd (Angular/React  UI Framework)
+	- Mobile application -> o/p will be on the mobile screen -> Android Framework (has both backend and frontend)
+	- Enterprise application -> Java Applets -> Banking, CRM, 
+
+Framework -> built on top of the  any programming language
+	  -> pre-built structure or set of tools to develop your application
+	  -> has libraries, templates and guidelines to streamline you development process
+
+	 -> web, mobile, desktop
+
+
+Java Full Stack Developer with Angular 
+	-> BackEnd, Database, FrontEnd
+
+	-> BackEnd - Development + testing 
+		Core Java - junit,  completed
+		Spring Framework - Core, AOP, MVC, Data JPA, security
+		Spring Boot (testing) - REST API, Web Application
+		Microservices(testing) - spring cloud components
+		
+	-> Database - Development + testing
+		Relational - SQL (MySQL, Oracle, Postgres)
+		Non-Relational - NOSQL (MongoDB)
+		Java coding - Hibernate, Spring Data JPA, Spring Boot Data JPA
+	
+	-> FrontEnd - Development + testing 
+		Structure - HTML
+		Style - CSS, BootStrap
+		Interaction -  JavaScript, ES6, Typescript
+		Angular - consists of Componentsm forms, routing, etc...
+		
+	-> DevOps
+		CI / CD
+		
+		
+Core Java 
+		class - logical template, - variables, methods/functions
+		object - real time entity
+		
+		create an object - using new keyword
+		
+		Spring Framework - we wont use new keyword, 
+							Spring container - creating & managing the objects
+							
+		converting normal java bean into spring bean - @Component - class level annotation
+		
+		@Component
+public class AccountService {
+    // business logic
+}
+
+@Component
+public class AccountRepository {
+    // business logic
+}
+
+@Component
+public class AccountController {
+    // business logic
+}
+
+		
+		@Override, 
+		
+DI - injecting other class object into main class , 
+	- @Autowired - dependency injection
+
+inheritance - is-a relationship Animal -> Dog, Student -> enginnering student
+			- has-a relationship Car -> Engine, Bike - Engine 
+	class Customer{
+  
+		int sno;
+		String name;
+		String email;
+		
+		//Injecting the object 
+		Address addr;
+		
+		//methods
+		
+	}
+	
+	class Address{
+	
+		int doorno;
+		String streetAddr;
+		String cityName;
+		String pincode;
+		
+	}
+
+		
+Spring Container
+	- responsible for creating, configuring and assembling Spring Beans
+
+Spring Bean 
+	- plain Java Class, which has follow some rules provided Spring Container
+	
+	1. Class must be public
+	2. Variables should  be private
+	3. Methods should public
+	4. class should be under a package -> layered approach - model, service, repository, controller (no default package)
+	5. Can have Default(empty) constructor with getter & setter or parameterised constructor with getter & setter 
+	6. Class can extend or implement only classes or interface from Spring Frameework API
+	7. Class can override equals(), toString(), hashCode() methods
+	8. class can implements java.io.Serializable
+	9. Class can use Core Java Annotations,Spring Framework Annotations and some more integrations
+	10. Annotate your class with @Component(Base Annotation),@Autowired, @Primary
+		@Entity - inside model package
+		@Service - inside service package
+		@Controller - inside controller package - spring mvc
+		
+		
+	
+
+Spring Configuation can be done in 3 ways
+	
+	1. XML based configuration
+	2. Java based configuration
+	3. Annotation based configuration
+
+
+
+Spring Framework 
+	-> java based framework developing enterprise applications
+	-> flexible architctures, data access, security 
+
+Key Components 
+	1. Spring Core  - IoC - Inversion Of Control - Objects in the Spring applications are managed by the Spring IoC Container.
+	2. DI - Dependency Injection
+	3. AOP - Aspect Oriented Programming
+	4. Spring Data - Data Access - support for database through JDBC(low-level) or ORM (Hibernate)
+	5. Transaction Management 
+	6. MVC - Model View Controller
+	7. Security - authentication, authorization, encryption(process of converting data into code to prevent unauthorized access), decryption (converting code into data)
+	8. Testing - Core Java, 
+
+
+
+
+Steps to Create Spring Core app
+1. Create a maven project
+2. Add a dependency Spring Core, Context
+
+<dependencies>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>6.1.1</version>
+</dependency>
+<dependency>
+  <groupId>org.springframework</groupId>
+  <artifactId>spring-context</artifactId>
+  <version>6.1.1</version>
+</dependency>
+</dependencies>
+3. Create a normal Java Bean class -> made it in Spring Bean with @Component annotation , 
+4. Create resources folder, applicationContext.xml /beans.xml
+	<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="customer" class="com.model.Customer">
+    <!-- Define a bean named "customer" of class "com.model.Customer" -->
+        <!-- Set the property "sno" with the value "1234567890" -->
+        <!-- Set the property "name" with the value "Isha" -->
+        <property name="sno" value="100"></property>
+        <property name="name" value="Isha"></property>
+        <property name="email" value="isha@gmail.com"></property>
+        
+    </bean>
+</beans>
+
+
+
+5. Create MainApp - main method 
+	Load the context -> through XML 
+	Get bean 
+	Access those methods inside the beans
+	
+	Assignment - 1
+Healthcare - Appointment Booking System
+Scenario: Develop a healthcare appointment system. Check if a doctor is available on a date, and book an appointment.
+Components:
+	DoctorRepository (returns doctor availability)
+	AppointmentService (books appointment if available)
+Input:
+appointmentService.book("DOC101", "2025-04-10")
+Output:
+	"Appointment confirmed" or "Doctor not available"
+Implementation Notes:
+	Use Map<String, List<LocalDate>> to simulate doctor schedule.
+	Use Spring XML to inject DoctorRepository into AppointmentService.
+	
+	Spring Core - DI, IoC - 3 projects
+	Spring MVC - 2 or 3 projects
+	Spring AOP  - 1 project
+	Spring Data JPA - 3 projects 
+	
+	Spring Boot 

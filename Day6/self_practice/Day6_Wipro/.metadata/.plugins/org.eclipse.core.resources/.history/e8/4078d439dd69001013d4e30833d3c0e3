@@ -1,0 +1,19 @@
+package com.wipro.lambdaex2;
+
+interface Drawable{
+	public void draw();
+}
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+		int width = 10;
+		Drawable drawing = () -> {
+			System.out.println("Drawing"+width);
+		};
+		
+		drawing.draw();
+
+	}
+
+}

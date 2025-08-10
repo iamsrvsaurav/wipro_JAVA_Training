@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.model.FlightServiece.java&apos; to &apos;FlightService.java&apos;&#x0D;&#x0A;- Original project: &apos;airplane-booking-ticket-confirmation&apos;&#x0D;&#x0A;- Original element: &apos;com.model.FlightServiece.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.model.FlightService.java&apos;" description="Rename compilation unit &apos;FlightServiece.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.model{FlightServiece.java" name="FlightService.java" references="false" stamp="1753963716243" version="1.0"/>
+</session>

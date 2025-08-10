@@ -1,0 +1,5 @@
+package abstract2;
+
+public interface DelhiHO {
+
+}

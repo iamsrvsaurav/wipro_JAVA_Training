@@ -1,0 +1,42 @@
+package streamex.com.wipro.allinone;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamExampleEmployeeSort3 {
+
+	public static void main(String[] args) {
+		List<Employee> employees = new ArrayList<>();
+		
+		employees.add(new Employee(10,"Ramesh",20,400000));
+		employees.add(new Employee(29,"Santosh",29,350000));
+		employees.add(new Employee(30,"Sanjay",30,450000));
+		employees.add(new Employee(40,"Pramod",29,500000));
+
+		/*List<Employee> employee = employees.stream()
+			.sorted((o1,o2) -> (int)(o1.getSalary()-o2.getSalary()))
+			.collect(Collectors.toList());
+		System.out.println(employee);*/
+		
+		/*List<Employee> employee = employees.stream()
+				.sorted((o1,o2) -> (int)(o2.getSalary()-o1.getSalary()))
+				.collect(Collectors.toList());
+			System.out.println(employee);*/
+		
+		//Sort On The Name
+		
+		/*List<Employee> employee = employees.stream()
+				.sorted(Comparator.comparing(Employee::getName))
+				.collect(Collectors.toList());
+			System.out.println(employee);*/
+		
+		List<Employee> employee = employees.stream()
+				.sorted(Comparator.comparing(Employee::getName).reversed())
+				.collect(Collectors.toList());
+			System.out.println(employee);
+		
+	}
+
+}

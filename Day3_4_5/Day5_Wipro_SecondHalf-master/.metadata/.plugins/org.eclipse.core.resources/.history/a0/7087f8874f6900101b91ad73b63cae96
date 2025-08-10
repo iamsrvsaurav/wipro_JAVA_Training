@@ -1,0 +1,43 @@
+package synch;
+class TwoStrings1{
+	synchronized void print(String str1,String str2) {
+		System.out.println(str1);
+		try {
+			System.out.println(str2);
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}
+class PrintStringThread2 implements Runnable{
+	Thread thread;
+	String str1;
+	String str2;
+	public PrintStringThread2(String str1,String str2) {
+		this.str1 = str1;
+		this.str2 = str2;
+		thread = new Thread(this);
+		thread.start();
+	}
+	@Override
+	public void run() {
+		TwoStrings1 twoString = new TwoStrings1();
+		twoString.print(str1, str2);
+		
+	}
+	
+}
+
+public class SyncThread2 {
+
+	public static void main(String[] args) {
+		new PrintStringThread2("Hello", "there");
+		new PrintStringThread2("How are", "you");
+		new PrintStringThread2("Thank you","very much");
+
+
+	}
+
+}

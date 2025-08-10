@@ -1,0 +1,11 @@
+package ex;
+
+public class Main1 {
+
+	public static void main(String[] args) {
+		Intf1Impl i = new Intf1Impl();
+		i.newEnhancement();
+		i.disp();
+	}
+
+}

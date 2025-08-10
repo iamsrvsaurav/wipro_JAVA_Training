@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>About Me</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+</head>
+<body>
+    <div th:replace="layout/header :: header"></div>
+    <h2>About Me</h2>
+    <div class="container">
+        <div>
+            <h3>About Me</h3>
+            <p>From a young age, I've always had a sense of motivation and passion driving me forward... (your text)</p>
+        </div>
+        <div>
+            <h3>Basic Information</h3>
+            <p><b>Date Of Birth:</b> 08/12/1997</p>
+            <p><b>E-mail:</b> rakshithavl78@gmail.com</p>
+            <p><b>Mobile No:</b> 8123308575</p>
+            <p><b>Address:</b> #175 Vandaraguppe, Ramanagara</p>
+        </div>
+    </div>
+</body>
+</html>
+l>

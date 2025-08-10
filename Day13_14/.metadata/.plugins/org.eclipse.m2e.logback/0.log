@@ -1,0 +1,474 @@
+2025-08-04 16:06:33,745 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2025-08-04 16:10:49,243 [Worker-14: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT @ C:\Users\iamsr\Desktop\Wipro_Training\Day13\ecommerce-app-rest-api\pom.xml.
+2025-08-04 16:11:05,184 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-04 16:11:05,205 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-04 16:11:05,214 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\ecommerce-app-rest-api\src\test\resources
+2025-08-04 16:11:07,649 [Worker-19: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT @ C:\Users\iamsr\Desktop\Wipro_Training\Day13\ecommerce-app-rest-api\pom.xml.
+2025-08-04 16:11:07,727 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-04 16:11:07,755 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-04 16:11:07,766 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\ecommerce-app-rest-api\src\test\resources
+2025-08-04 17:31:05,456 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-04 17:31:05,517 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-04 17:31:05,521 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\ecommerce-app-rest-api\src\test\resources
+2025-08-04 17:31:43,630 [Worker-24: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+org.eclipse.core.runtime.CoreException: Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1748)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:527)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:415)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:409)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:137)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-08-04 17:31:43,660 [Worker-24: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+org.eclipse.core.runtime.CoreException: Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1748)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:527)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:415)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:410)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:137)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-08-04 17:31:43,675 [Worker-24: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+org.eclipse.core.runtime.CoreException: Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1748)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2009)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:380)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:259)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:229)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:411)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:137)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-08-04 17:31:45,119 [Worker-7: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT @ C:\Users\iamsr\Desktop\Wipro_Training\Day13\ecommerce-app-rest-api\pom.xml.
+2025-08-04 17:31:46,815 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-04 17:31:46,844 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-04 17:31:46,852 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\ecommerce-app-rest-api\src\test\resources
+2025-08-04 17:31:47,337 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-04 17:31:47,339 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-04 17:31:47,343 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\ecommerce-app-rest-api\src\test\resources
+2025-08-04 17:35:03,107 [Worker-31: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-08-04 17:35:06,209 [Worker-31: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT @ C:\Users\iamsr\Downloads\JAVA-FSD-ANGULAR-main (5)\JAVA-FSD-ANGULAR-main\SPRINGBOOT\PROJECTS\ecommerce-app-rest-api\pom.xml.
+2025-08-04 17:35:10,601 [Worker-31: Update Maven projects configuration] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+org.eclipse.core.runtime.CoreException: Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1748)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:527)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:415)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.enable(MavenRuntimeClasspathProvider.java:403)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.enable(MavenRuntimeClasspathProvider.java:397)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.enable(MavenRuntimeClasspathProvider.java:427)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:324)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:388)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1053)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
+	at org.eclipse.m2e.core.ui.internal.project.MavenProjectConfigurator$UpdateMavenConfigurationJob.run(MavenProjectConfigurator.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-08-04 17:35:10,614 [Worker-31: Update Maven projects configuration] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+org.eclipse.core.runtime.CoreException: Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1748)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:527)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:415)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.enable(MavenRuntimeClasspathProvider.java:404)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.enable(MavenRuntimeClasspathProvider.java:397)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.enable(MavenRuntimeClasspathProvider.java:427)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:324)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:388)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1053)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
+	at org.eclipse.m2e.core.ui.internal.project.MavenProjectConfigurator$UpdateMavenConfigurationJob.run(MavenProjectConfigurator.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-08-04 17:35:10,640 [Worker-31: Update Maven projects configuration] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+org.eclipse.core.runtime.CoreException: Launch configuration EcommerceAppRestApiApplication references non-existing project ecommerce-app-rest-api.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1871)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1748)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:66)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2009)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:380)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:259)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:229)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.enable(MavenRuntimeClasspathProvider.java:398)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.enable(MavenRuntimeClasspathProvider.java:427)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:324)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:388)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1053)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
+	at org.eclipse.m2e.core.ui.internal.project.MavenProjectConfigurator$UpdateMavenConfigurationJob.run(MavenProjectConfigurator.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-08-04 17:35:11,935 [Worker-31: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ecommerce-app-rest-api/src/main/java
+2025-08-04 17:35:11,960 [Worker-31: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ecommerce-app-rest-api/src/main/resources
+2025-08-04 17:35:11,987 [Worker-31: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ecommerce-app-rest-api/src/main/resources
+2025-08-04 17:35:12,028 [Worker-31: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ecommerce-app-rest-api/src/test/java
+2025-08-04 17:35:12,032 [Worker-31: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ecommerce-app-rest-api/src/test/resources
+2025-08-04 17:35:15,630 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-04 17:35:15,689 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-04 17:35:15,702 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Downloads\JAVA-FSD-ANGULAR-main (5)\JAVA-FSD-ANGULAR-main\SPRINGBOOT\PROJECTS\ecommerce-app-rest-api\src\test\resources
+2025-08-04 17:35:20,949 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-04 17:35:20,955 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-04 17:35:20,965 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Downloads\JAVA-FSD-ANGULAR-main (5)\JAVA-FSD-ANGULAR-main\SPRINGBOOT\PROJECTS\ecommerce-app-rest-api\src\test\resources
+2025-08-04 17:35:22,478 [Worker-31: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 7.00 sec, update config takes 11.00 sec 
+2025-08-05 09:11:13,463 [Worker-33: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-08-05 09:11:15,014 [Worker-33: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:movie-ticket-booking-app:0.0.1-SNAPSHOT @ C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\pom.xml.
+2025-08-05 09:11:16,035 [Worker-33: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /movie-ticket-booking-app/src/main/java
+2025-08-05 09:11:16,036 [Worker-33: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /movie-ticket-booking-app/src/main/resources
+2025-08-05 09:11:16,042 [Worker-33: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /movie-ticket-booking-app/src/main/resources
+2025-08-05 09:11:16,048 [Worker-33: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /movie-ticket-booking-app/src/test/java
+2025-08-05 09:11:16,049 [Worker-33: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /movie-ticket-booking-app/src/test/resources
+2025-08-05 09:11:16,879 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 09:11:16,909 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 09:11:16,920 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 09:11:18,430 [Worker-33: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 2.00 sec, update config takes 2.00 sec 
+2025-08-05 09:11:18,646 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 09:11:18,647 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 09:11:18,651 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 09:11:19,717 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 09:11:19,719 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 09:11:19,722 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 09:12:51,761 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 09:12:51,788 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 09:12:51,793 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 09:16:05,127 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 09:16:05,138 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 09:16:05,143 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 09:16:19,057 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 09:16:19,071 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 09:16:19,073 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 09:17:35,788 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 09:17:35,809 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 09:17:35,814 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 09:18:13,362 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 09:18:13,369 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 09:18:13,371 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 09:18:30,635 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 09:18:30,642 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 09:18:30,644 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 09:18:37,655 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 09:18:37,662 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 09:18:37,665 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 09:19:03,054 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 09:19:03,068 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 09:19:03,071 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 09:19:16,746 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 09:19:16,754 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 09:19:16,758 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 09:20:58,589 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 09:20:58,599 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 09:20:58,603 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 11:50:58,170 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 11:50:58,193 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 11:50:58,203 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 11:51:29,847 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 11:51:29,982 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 11:51:29,986 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 11:53:00,445 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 11:53:00,459 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 11:53:00,468 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 11:53:36,117 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 11:53:36,153 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 11:53:36,158 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 11:54:00,283 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 11:54:00,311 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 11:54:00,317 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 11:54:22,204 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 11:54:22,228 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 11:54:22,232 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 14:57:40,322 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 14:57:40,410 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 14:57:40,416 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 14:59:39,467 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 14:59:39,469 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 14:59:39,472 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:00:40,373 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:00:40,395 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:00:40,402 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:01:00,518 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:01:00,529 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:01:00,534 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:01:35,276 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:01:35,286 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:01:35,290 [Worker-110: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:01:38,380 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:01:38,394 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:01:38,399 [Worker-107: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:04:30,304 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:04:30,336 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:04:30,344 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:09:08,921 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:09:08,933 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:09:08,939 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:11:25,682 [Worker-116: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:11:25,692 [Worker-116: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:11:25,696 [Worker-116: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:17:46,717 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:17:46,759 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:17:46,763 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:18:17,818 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:18:17,842 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:18:17,845 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:18:35,164 [Worker-114: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:movie-ticket-booking-app:0.0.1-SNAPSHOT @ C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\pom.xml.
+2025-08-05 15:18:38,452 [Worker-114: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ecommerce-app-rest-api: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT with classifier  to /ecommerce-app-rest-api/target/classes
+2025-08-05 15:18:38,518 [Worker-114: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ecommerce-app-rest-api: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT with classifier  to /ecommerce-app-rest-api/target/classes
+2025-08-05 15:18:39,411 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:18:39,412 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:18:39,417 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:18:39,420 [Worker-114: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of movie-ticket-booking-app
+2025-08-05 15:18:39,424 [Worker-114: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for movie-ticket-booking-app
+2025-08-05 15:18:39,843 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:18:39,861 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:18:39,864 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:19:05,421 [Worker-122: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:movie-ticket-booking-app:0.0.1-SNAPSHOT @ C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\pom.xml.
+2025-08-05 15:19:05,883 [Worker-122: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ecommerce-app-rest-api: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT with classifier  to /ecommerce-app-rest-api/target/classes
+2025-08-05 15:19:06,282 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:19:06,284 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:19:06,290 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:19:06,290 [Worker-122: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of movie-ticket-booking-app
+2025-08-05 15:19:06,290 [Worker-122: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for movie-ticket-booking-app
+2025-08-05 15:20:35,445 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:20:35,465 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:20:35,468 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:21:07,890 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:21:07,906 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:21:07,909 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:21:38,904 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:21:38,946 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:21:38,950 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:21:46,856 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:21:46,864 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:21:46,867 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:22:03,277 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:22:03,284 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:22:03,286 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:22:08,416 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:22:08,423 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:22:08,427 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:22:13,792 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:22:13,799 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:22:13,802 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:23:08,593 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:23:08,600 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:23:08,604 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:23:35,424 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:23:35,431 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:23:35,434 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:24:04,659 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:24:04,669 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:24:04,672 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:24:35,130 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:24:35,140 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:24:35,146 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:25:34,940 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:25:34,952 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:25:34,955 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:26:04,402 [Worker-121: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:26:04,412 [Worker-121: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:26:04,416 [Worker-121: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:28:30,832 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:28:30,872 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:28:30,876 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:28:53,286 [Worker-121: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:28:53,311 [Worker-121: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:28:53,316 [Worker-121: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:29:23,566 [Worker-126: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:29:23,575 [Worker-126: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:29:23,578 [Worker-126: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:29:51,335 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:29:51,342 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:29:51,345 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:30:51,662 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:30:51,670 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:30:51,674 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:31:15,608 [Worker-126: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:31:15,794 [Worker-126: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:31:15,805 [Worker-126: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:34:08,772 [Worker-126: Launching MovieTicketBookingAppApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:34:08,781 [Worker-126: Launching MovieTicketBookingAppApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:34:08,784 [Worker-126: Launching MovieTicketBookingAppApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:34:08,942 [Worker-126: Launching MovieTicketBookingAppApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ecommerce-app-rest-api: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT with classifier null to /ecommerce-app-rest-api/target/classes
+2025-08-05 15:34:09,065 [Worker-126: Launching MovieTicketBookingAppApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ecommerce-app-rest-api: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT with classifier null to /ecommerce-app-rest-api/target/classes
+2025-08-05 15:34:09,204 [Worker-126: Launching MovieTicketBookingAppApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ecommerce-app-rest-api: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT with classifier null to /ecommerce-app-rest-api/target/classes
+2025-08-05 15:39:47,081 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013 [639])
+2025-08-05 15:39:47,088 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013
+2025-08-05 15:39:47,089 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\aopalliance-1.0.jar
+2025-08-05 15:39:47,091 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\guice-5.1.0.jar
+2025-08-05 15:39:47,091 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\httpclient-4.5.14.jar
+2025-08-05 15:39:47,091 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\httpcore-4.4.16.jar
+2025-08-05 15:39:47,092 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\jansi-2.4.1.jar
+2025-08-05 15:39:47,092 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\jcl-over-slf4j-1.7.36.jar
+2025-08-05 15:39:47,093 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-artifact-3.9.9.jar
+2025-08-05 15:39:47,093 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-builder-support-3.9.9.jar
+2025-08-05 15:39:47,094 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-compat-3.9.9.jar
+2025-08-05 15:39:47,096 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-core-3.9.9.jar
+2025-08-05 15:39:47,096 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-embedder-3.9.9.jar
+2025-08-05 15:39:47,096 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-model-3.9.9.jar
+2025-08-05 15:39:47,098 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-model-builder-3.9.9.jar
+2025-08-05 15:39:47,099 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-plugin-api-3.9.9.jar
+2025-08-05 15:39:47,099 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-repository-metadata-3.9.9.jar
+2025-08-05 15:39:47,100 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-api-1.9.22.jar
+2025-08-05 15:39:47,100 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-connector-basic-1.9.22.jar
+2025-08-05 15:39:47,100 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-impl-1.9.22.jar
+2025-08-05 15:39:47,101 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-named-locks-1.9.22.jar
+2025-08-05 15:39:47,101 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-provider-3.9.9.jar
+2025-08-05 15:39:47,102 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-spi-1.9.22.jar
+2025-08-05 15:39:47,103 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-transport-file-1.9.22.jar
+2025-08-05 15:39:47,103 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-transport-http-1.9.22.jar
+2025-08-05 15:39:47,103 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-transport-wagon-1.9.22.jar
+2025-08-05 15:39:47,104 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-resolver-util-1.9.22.jar
+2025-08-05 15:39:47,105 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-settings-3.9.9.jar
+2025-08-05 15:39:47,105 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-settings-builder-3.9.9.jar
+2025-08-05 15:39:47,106 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\maven-shared-utils-3.4.2.jar
+2025-08-05 15:39:47,108 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\org.eclipse.sisu.inject-0.9.0.M3.jar
+2025-08-05 15:39:47,108 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\org.eclipse.sisu.plexus-0.9.0.M3.jar
+2025-08-05 15:39:47,108 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-build-api-0.0.7.jar
+2025-08-05 15:39:47,108 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-build-api-1.2.0.jar
+2025-08-05 15:39:47,109 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-cipher-2.0.jar
+2025-08-05 15:39:47,110 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-classworlds-2.8.0.jar
+2025-08-05 15:39:47,110 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-component-annotations-2.1.0.jar
+2025-08-05 15:39:47,111 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-interpolation-1.27.jar
+2025-08-05 15:39:47,111 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-sec-dispatcher-2.0.jar
+2025-08-05 15:39:47,113 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-utils-3.5.1.jar
+2025-08-05 15:39:47,114 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\plexus-xml-3.0.1.jar
+2025-08-05 15:39:47,114 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\wagon-file-3.5.3.jar
+2025-08-05 15:39:47,115 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\wagon-http-3.5.3.jar
+2025-08-05 15:39:47,115 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\wagon-http-shared-3.5.3.jar
+2025-08-05 15:39:47,115 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20250220-2013\jars\wagon-provider-api-3.5.3.jar
+2025-08-05 15:39:47,117 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.4.8.jre [18])
+2025-08-05 15:39:47,118 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\com.google.guava_33.4.8.jre.jar
+2025-08-05 15:39:47,118 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.17 [1004])
+2025-08-05 15:39:47,118 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\slf4j.api_2.0.17.jar
+2025-08-05 15:39:47,118 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.inject.jakarta.inject-api_1.0.5 [35])
+2025-08-05 15:39:47,119 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\jakarta.inject.jakarta.inject-api_1.0.5.jar
+2025-08-05 15:39:47,119 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20200909-1856 [45])
+2025-08-05 15:39:47,120 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\javax.annotation_1.3.5.v20200909-1856.jar
+2025-08-05 15:39:47,120 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.9.0 [76])
+2025-08-05 15:39:47,121 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.apache.commons.cli_1.9.0.jar
+2025-08-05 15:39:47,121 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [78])
+2025-08-05 15:39:47,122 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2025-08-05 15:39:47,122 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.3 [19])
+2025-08-05 15:39:47,122 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\iamsr\.p2\pool\plugins\com.google.guava.failureaccess_1.0.3.jar
+2025-08-05 15:39:47,128 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app":
+2025-08-05 15:39:47,130 [Worker-132: Launching Executing clean in C__Users_iamsr_Desktop_Wipro_Training_Day13_movie-ticket-booking-app] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean
+2025-08-05 15:39:50,165 [Worker-133: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:39:50,183 [Worker-133: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:39:50,186 [Worker-133: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:39:50,186 [Worker-133: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of movie-ticket-booking-app
+2025-08-05 15:39:50,186 [Worker-133: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for movie-ticket-booking-app
+2025-08-05 15:40:06,292 [Worker-133: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-08-05 15:40:06,741 [Worker-133: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:movie-ticket-booking-app:0.0.1-SNAPSHOT @ C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\pom.xml.
+2025-08-05 15:40:07,234 [Worker-133: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ecommerce-app-rest-api: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT with classifier  to /ecommerce-app-rest-api/target/classes
+2025-08-05 15:40:07,720 [Worker-133: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /movie-ticket-booking-app/src/main/java
+2025-08-05 15:40:07,723 [Worker-133: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /movie-ticket-booking-app/src/main/resources
+2025-08-05 15:40:07,724 [Worker-133: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /movie-ticket-booking-app/src/main/resources
+2025-08-05 15:40:07,725 [Worker-133: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /movie-ticket-booking-app/src/test/java
+2025-08-05 15:40:07,726 [Worker-133: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /movie-ticket-booking-app/src/test/resources
+2025-08-05 15:40:08,849 [Worker-133: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for movie-ticket-booking-app
+2025-08-05 15:40:08,913 [Worker-133: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 1.00 sec, update config takes 1.00 sec 
+2025-08-05 15:40:09,379 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:40:09,398 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:40:09,405 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:40:09,405 [Worker-123: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of movie-ticket-booking-app
+2025-08-05 15:40:09,405 [Worker-123: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for movie-ticket-booking-app
+2025-08-05 15:40:30,565 [Worker-133: Launching MovieTicketBookingAppApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ecommerce-app-rest-api: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT with classifier null to /ecommerce-app-rest-api/target/classes
+2025-08-05 15:40:30,665 [Worker-133: Launching MovieTicketBookingAppApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ecommerce-app-rest-api: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT with classifier null to /ecommerce-app-rest-api/target/classes
+2025-08-05 15:40:30,758 [Worker-133: Launching MovieTicketBookingAppApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ecommerce-app-rest-api: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT with classifier null to /ecommerce-app-rest-api/target/classes
+2025-08-05 15:44:00,450 [Worker-134: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:44:00,590 [Worker-134: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:44:00,595 [Worker-134: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:44:27,871 [Worker-134: Launching MovieTicketBookingAppApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ecommerce-app-rest-api: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT with classifier null to /ecommerce-app-rest-api/target/classes
+2025-08-05 15:44:28,002 [Worker-134: Launching MovieTicketBookingAppApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ecommerce-app-rest-api: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT with classifier null to /ecommerce-app-rest-api/target/classes
+2025-08-05 15:44:28,120 [Worker-134: Launching MovieTicketBookingAppApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ecommerce-app-rest-api: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT with classifier null to /ecommerce-app-rest-api/target/classes
+2025-08-05 15:58:54,970 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:58:55,037 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:58:55,049 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 15:59:15,982 [Worker-134: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 15:59:15,997 [Worker-134: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 15:59:16,000 [Worker-134: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 16:00:19,347 [Worker-138: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 16:00:19,356 [Worker-138: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 16:00:19,360 [Worker-138: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 16:00:29,136 [Worker-138: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 16:00:29,143 [Worker-138: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 16:00:29,146 [Worker-138: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-05 16:02:25,836 [Worker-138: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-05 16:02:25,845 [Worker-138: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-05 16:02:25,848 [Worker-138: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources
+2025-08-06 09:22:02,556 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-08-06 09:23:37,170 [Worker-2: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ecommerce-app-rest-api: com.example:ecommerce-app-rest-api:0.0.1-SNAPSHOT with classifier  to /ecommerce-app-rest-api/target/classes
+2025-08-06 09:29:36,710 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-08-06 09:29:36,842 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-08-06 09:29:36,861 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\iamsr\Desktop\Wipro_Training\Day13\movie-ticket-booking-app\src\test\resources

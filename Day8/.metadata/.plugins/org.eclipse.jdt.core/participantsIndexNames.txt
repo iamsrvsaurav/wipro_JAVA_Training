@@ -1,0 +1,23 @@
+INDEX VERSION 1.134
+C:\Users\iamsr\Desktop\Wipro_Training\Day8\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3073741545.index
+\PageInclude5\src\main\java
+C:\Users\iamsr\Desktop\Wipro_Training\Day8\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\902908270.index
+\Request_ex2\src\main\java
+C:\Users\iamsr\Desktop\Wipro_Training\Day8\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3955889377.index
+\PageInclude\src\main\java
+C:\Users\iamsr\Desktop\Wipro_Training\Day8\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2183875342.index
+\JSPForward7\src\main\java
+C:\Users\iamsr\Desktop\Wipro_Training\Day8\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3876449878.index
+\JSPinclude6\src\main\java
+C:\Users\iamsr\Desktop\Wipro_Training\Day8\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4235378920.index
+\Session8\src\main\java
+C:\Users\iamsr\Desktop\Wipro_Training\Day8\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1923024058.index
+\Session8\src\main\java
+C:\Users\iamsr\Desktop\Wipro_Training\Day8\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1589916315.index
+\Response\src\main\java
+C:\Users\iamsr\Desktop\Wipro_Training\Day8\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4173788534.index
+\PageDirective4\src\main\java
+C:\Users\iamsr\Desktop\Wipro_Training\Day8\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\250781829.index
+\basicsyntax\src\main\java
+C:\Users\iamsr\Desktop\Wipro_Training\Day8\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2690954213.index
+\Response3\src\main\java

@@ -1,0 +1,13 @@
+package interfaceex;
+interface Intf1{
+	int x =12;
+	void show();
+}
+public class Prg1 {
+
+	public static void main(String[] args) {
+		System.out.println(Intf1.x);
+
+	}
+
+}

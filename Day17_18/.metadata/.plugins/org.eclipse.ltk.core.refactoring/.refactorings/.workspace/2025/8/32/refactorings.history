@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;quizapp_monorepo&apos;" deleteContents="false" description="Delete resource &apos;quizapp_monorepo&apos;" element1="/quizapp_monorepo" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1754674638860"/>
+</session>

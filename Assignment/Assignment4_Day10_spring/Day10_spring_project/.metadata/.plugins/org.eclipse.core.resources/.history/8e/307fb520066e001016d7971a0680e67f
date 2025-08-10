@@ -1,0 +1,27 @@
+package com.model;
+
+//package com.example.healthcare;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Map;
+
+public class DoctorRepository {
+    private Map<String, List<String>> doctorSchedule;  // Change LocalDate -> String
+
+    public void setDoctorSchedule(Map<String, List<String>> doctorSchedule) {
+        this.doctorSchedule = doctorSchedule;
+    }
+
+    public boolean isDoctorAvailable(String doctorId, LocalDate date) {
+        List<String> availableDates = doctorSchedule.get(doctorId);
+        return availableDates != null && availableDates.contains(date.toString());  
+        // compare using string format of date
+    }
+
+    public void bookAppointment(String doctorId, LocalDate date) {
+        if (isDoctorAvailable(doctorId, date)) {
+            doctorSchedule.get(doctorId).remove(date.toString());
+        }
+    }
+}

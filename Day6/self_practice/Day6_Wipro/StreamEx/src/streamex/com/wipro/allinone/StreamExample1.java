@@ -1,0 +1,27 @@
+package streamex.com.wipro.allinone;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamExample1 {
+	public static List<Product> getProducts(){
+		List<Product> productList = new ArrayList<>();
+		
+		productList.add(new Product(1,"HP laptop",25000f));
+		productList.add(new Product(2,"Dell laptop",30000f));
+		productList.add(new Product(3,"Lenova laptop",28000f));
+		productList.add(new Product(4,"Sony laptop",25000f));
+		productList.add(new Product(5,"Apple laptop",98000f));
+		
+		return productList;
+	}
+	public static void main(String[] args) {
+		
+		List<Product> list = getProducts().stream()
+			.filter((product)->product.getPrice()>25000f)
+			.collect(Collectors.toList());
+		
+		list.forEach(System.out::println);
+	}
+}

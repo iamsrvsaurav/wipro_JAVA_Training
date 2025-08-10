@@ -1,0 +1,14 @@
+package ex;
+interface Intf2{
+	static void show() {
+		System.out.println("Static show");
+	}
+	
+}
+public class Main2 {
+
+	public static void main(String[] args) {
+		Intf2.show();
+	}
+
+}

@@ -1,0 +1,10 @@
+package abstraction1;
+
+public class BangloreOffice extends DelhiHO {
+
+	public void verifyingDocument() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

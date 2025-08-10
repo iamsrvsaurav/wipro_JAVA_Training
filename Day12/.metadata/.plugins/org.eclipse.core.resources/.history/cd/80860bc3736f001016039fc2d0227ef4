@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Education</title><link rel="stylesheet" th:href="@{/css/styles.css}"/></head>
+<body>
+    <div th:replace="layout/header :: header"></div>
+    <h2>Education</h2>
+    <div class="card">
+        <div>2017-2021</div>
+        <div>
+            <b>Bachelor of Engineering</b><br/>
+            GOVERNMENT ENGINEERING COLLEGE RAMANAGARA<br/>
+            Completed B.E in Computer Engineering with <b>8.15 CGPA</b>
+        </div>
+    </div>
+    <div class="card">
+        <div>2016-2017</div>
+        <div>
+            <b>Pre-University Education</b><br/>
+            CHENNAMBIKA PU COLLEGE<br/>
+            Completed with <b>78.86%</b>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+package com.wipro.lambdaex2;
+
+public class LambdaExample1 {
+
+	public static void main(String[] args) {
+		//Using a lambda expression to define the apply method
+		MyFunction squareFunction = (x) -> x*x;
+		
+		//Using lambda expression
+		int result = squareFunction.apply(5);
+		System.out.println("Square of 5:"+result);
+
+	}
+
+}

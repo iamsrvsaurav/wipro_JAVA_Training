@@ -1,0 +1,6 @@
+package lambdaex1;
+
+public interface Calculator {
+	
+	public void add() ;
+}

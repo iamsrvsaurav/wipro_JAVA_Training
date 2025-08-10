@@ -1,0 +1,73 @@
+Recap's (Yesterday Backlog):-
+
+Exception Handling, 
+	Try-Catch Blocks, 
+	types of exceptions, 
+	Throwing Exceptions & catching Multiple Exceptions, 
+	Finally block,
+	custom exceptions, 
+
+Access specifier:
+	private,
+	default, int x; in the same package it is accessed everywhere.
+	protected,in the same package it is accessed everywhere and in different package subclass
+		package pack1;
+		public class A{
+			protected int x;
+		}
+		package pack2;
+		import pack1.A;
+			class A1 extends A{
+			}
+	public
+		Everywhere it will be accessed
+	PACKAGES
+
+File I/O, 
+	java.io--->File IO class,interface and API
+
+		Byte Read/Write
+		Character Read/Write
+
+Serialization and Deserialization:
+
+	class Customer{
+		int custId;
+		String custName;
+		transient int pin;//Confedencial info
+	}
+		Customer c = new Customer();
+		c.custId = 123;
+		c.CustName="Ram";
+
+		
+		
+
+Try with Resources, 
+Error Hierarchy
+
+Solid Design Principles, 
+Wrapper Class, 
+JDBC  
+NoSQL
+
+Today's Topics:-
+
+Introduction to Collections Framework, 
+List, 
+Set,
+Map, 
+Queue Interface, 
+Deque Interface, 
+Stack Class, 
+Iterator Interface, 
+Sorting and Searching Collections, 
+Generics and Type Safety,
+Comparators and Comparables,  
+	class Employee{
+			int empId;
+			String empName,
+			double salary
+		}
+Concurrent Collections, 
+

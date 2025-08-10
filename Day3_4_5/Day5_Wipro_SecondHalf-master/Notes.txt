@@ -1,0 +1,10 @@
+Processing:
+	CPU Based processing is heavy weight , consumes cpu, memory, disk and network
+	Thread Based is a light weight which doesn't consumes memory, and is a separate path of execution.
+
+Multithreading:
+	Thread:
+	Runnable:
+	
+Thread Local,
+Synchronization and Thread Safety

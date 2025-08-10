@@ -1,0 +1,8 @@
+package com.example.quiz_app.enums;
+
+public class Difficulty {
+		EASY,
+	    MEDIUM,
+	    HIGH
+
+}
