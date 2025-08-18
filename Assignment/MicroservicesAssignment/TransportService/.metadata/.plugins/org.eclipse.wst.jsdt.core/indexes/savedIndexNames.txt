@@ -1,0 +1,5 @@
+INDEX VERSION 1.4+D:\practice-sena\Micro\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1050042363.index
+103026069.index
+1698827149.index
+2861871210.index

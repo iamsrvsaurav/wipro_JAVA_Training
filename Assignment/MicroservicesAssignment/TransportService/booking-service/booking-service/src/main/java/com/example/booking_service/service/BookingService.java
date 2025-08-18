@@ -1,0 +1,91 @@
+package com.example.booking_service.service;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.stereotype.Service;
+
+import com.example.booking_service.client.DriverClient;
+import com.example.booking_service.client.RouteClient;
+import com.example.booking_service.client.VehicleClient;
+import com.example.booking_service.dto.DriverDTO;
+import com.example.booking_service.dto.RouteDTO;
+import com.example.booking_service.dto.VehicleDTO;
+import com.example.booking_service.entity.Booking;
+import com.example.booking_service.repository.BookingRepository;
+
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+
+@Service
+public class BookingService {
+
+    private final BookingRepository repo;
+    private final VehicleClient vehicleClient;
+    private final DriverClient driverClient;
+    private final RouteClient routeClient;
+
+    public BookingService(BookingRepository repo, VehicleClient vehicleClient, DriverClient driverClient, RouteClient routeClient) {
+        this.repo = repo;
+        this.vehicleClient = vehicleClient;
+        this.driverClient = driverClient;
+        this.routeClient = routeClient;
+    }
+
+    public List<Booking> all() { return repo.findAll(); }
+
+    public Booking byId(Long id) {
+        return repo.findById(id).orElseThrow(() -> new RuntimeException("Booking not found"));
+    }
+
+    @CircuitBreaker(name = "downstream", fallbackMethod = "createFallback")
+    public Booking create(Long vehicleId, Long driverId, Long routeId, String customerName, Integer passengerCount) {
+        // Validate downstreams
+        VehicleDTO v = vehicleClient.getVehicle(vehicleId);
+        DriverDTO d = driverClient.getDriver(driverId);
+        RouteDTO r = routeClient.getRoute(routeId);
+
+        // Simple checks (adjust field names)
+        if (v == null || !"Available".equalsIgnoreCase(v.getStatus())) {
+            throw new RuntimeException("Vehicle not available");
+        }
+        if (d == null || !"Available".equalsIgnoreCase(d.getStatus())) {
+            throw new RuntimeException("Driver not available");
+        }
+        if (r == null || (r.getStatus() != null && !"Active".equalsIgnoreCase(r.getStatus()))) {
+            throw new RuntimeException("Route not active");
+        }
+        if (passengerCount != null && v.getCapacity() != null && passengerCount > v.getCapacity()) {
+            throw new RuntimeException("Passenger count exceeds vehicle capacity");
+        }
+
+        Booking b = new Booking(vehicleId, driverId, routeId, customerName, passengerCount, "CREATED");
+        return repo.save(b);
+    }
+
+    // Fallback when any downstream is failing or CB is open
+    public Booking createFallback(Long vehicleId, Long driverId, Long routeId, String customerName, Integer passengerCount, Throwable ex) {
+        Booking b = new Booking(vehicleId, driverId, routeId, customerName, passengerCount, "PENDING_MANUAL_REVIEW");
+        return repo.save(b);
+    }
+
+    public Booking cancel(Long id) {
+        Booking b = byId(id);
+        b.setStatus("CANCELLED");
+        return repo.save(b);
+    }
+
+    // Example aggregation endpoint (optional)
+    @CircuitBreaker(name = "downstream", fallbackMethod = "detailsFallback")
+    public Map<String, Object> details(Long id) {
+        Booking b = byId(id);
+        VehicleDTO v = vehicleClient.getVehicle(b.getVehicleId());
+        DriverDTO d = driverClient.getDriver(b.getDriverId());
+        RouteDTO r = routeClient.getRoute(b.getRouteId());
+        return Map.of("booking", b, "vehicle", v, "driver", d, "route", r);
+    }
+
+    public Map<String, Object> detailsFallback(Long id, Throwable ex) {
+        Booking b = byId(id);
+        return Map.of("booking", b, "message", "Some services unavailable. Try later.");
+    }
+}

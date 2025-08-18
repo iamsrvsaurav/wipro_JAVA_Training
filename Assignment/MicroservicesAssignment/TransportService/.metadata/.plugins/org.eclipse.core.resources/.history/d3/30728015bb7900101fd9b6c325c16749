@@ -1,0 +1,63 @@
+package com.example.vehicle_service.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+import java.util.NoSuchElementException;
+
+@Service
+@Transactional
+public class VehicleService {
+
+    private final VehicleRepository vehicleRepository;
+
+    public VehicleService(VehicleRepository vehicleRepository) {
+        this.vehicleRepository = vehicleRepository;
+    }
+
+    // Create
+    public Vehicle create(Vehicle vehicle) {
+        return vehicleRepository.save(vehicle);
+    }
+
+    // Read all
+    @Transactional(readOnly = true)
+    public List<Vehicle> findAll() {
+        return vehicleRepository.findAll();
+    }
+
+    // Read by id
+    @Transactional(readOnly = true)
+    public Vehicle findById(Long id) {
+        return vehicleRepository.findById(id)
+                .orElseThrow(() -> new NoSuchElementException("Vehicle not found: " + id));
+    }
+
+    // Update
+    public Vehicle update(Long id, Vehicle payload) {
+        Vehicle v = vehicleRepository.findById(id)
+                .orElseThrow(() -> new NoSuchElementException("Vehicle not found: " + id));
+        v.setVehicleNumber(payload.getVehicleNumber());
+        v.setType(payload.getType());
+        v.setCapacity(payload.getCapacity());
+        v.setStatus(payload.getStatus());
+        return vehicleRepository.save(v);
+    }
+
+    // Update only status
+    public Vehicle updateStatus(Long id, String status) {
+        Vehicle v = vehicleRepository.findById(id)
+                .orElseThrow(() -> new NoSuchElementException("Vehicle not found: " + id));
+        v.setStatus(status);
+        return vehicleRepository.save(v);
+    }
+
+    // Delete
+    public void delete(Long id) {
+        if (!vehicleRepository.existsById(id)) {
+            throw new NoSuchElementException("Vehicle not found: " + id);
+        }
+        vehicleRepository.deleteById(id);
+    }
+}

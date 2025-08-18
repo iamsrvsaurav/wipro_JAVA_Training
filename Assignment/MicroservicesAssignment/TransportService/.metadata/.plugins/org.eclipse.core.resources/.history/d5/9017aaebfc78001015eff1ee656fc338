@@ -1,0 +1,5 @@
+package com.example.vehicleservice.model;
+
+public class Vehicle {
+
+}

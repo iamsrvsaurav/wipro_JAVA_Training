@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Healthcare Microservices Dashboard</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Healthcare Microservices Dashboard</h1>
+        <p>Quickly manage and test all Patient, Doctor, Appointment, Medical Record, and Billing services from a single web page.</p>
+    </header>
+
+    <main>
+        <!-- 1. Patient Service -->
+        <section>
+            <h2>Patient Service</h2>
+            <form id="patient-form" autocomplete="off">
+                <label>Name:<input name="name" type="text" required /></label>
+                <label>Insurance ID:<input name="insuranceId" type="text" /></label>
+                <label>Contact Number:<input name="contactNumber" type="text" /></label>
+                <label>Email:<input name="email" type="email" /></label>
+                <button type="submit">Add Patient</button>
+            </form>
+        </section>
+
+        <!-- 2. Doctor Service -->
+        <section>
+            <h2>Doctor Service</h2>
+            <form id="doctor-form" autocomplete="off">
+                <label>Name:<input name="name" type="text" required /></label>
+                <label>Specialization:<input name="specialization" type="text" /></label>
+                <button type="submit">Add Doctor</button>
+            </form>
+            <form id="block-slot-form" autocomplete="off">
+                <label>Doctor ID:<input name="doctorId" type="number" required /></label>
+                <label>Time Slot (YYYY-MM-DDTHH:MM:SS):<input name="apptTime" type="text" required /></label>
+                <button type="submit">Block Slot</button>
+            </form>
+        </section>
+
+        <!-- 3. Appointment Service -->
+        <section>
+            <h2>Appointment Service</h2>
+            <form id="appointment-form" autocomplete="off">
+                <label>Patient ID:<input name="patientId" type="number" required /></label>
+                <label>Doctor ID:<input name="doctorId" type="number" required /></label>
+                <label>Appt Time (YYYY-MM-DDTHH:MM:SS):<input name="apptTime" type="text" required /></label>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+
+        <!-- 4. Medical Records Service -->
+        <section>
+            <h2>Medical Records Service</h2>
+            <form id="medicalrecord-form" autocomplete="off">
+                <label>Patient ID:<input name="patientId" type="number" required /></label>
+                <label>Doctor ID:<input name="doctorId" type="number" required /></label>
+                <label>Diagnosis:<input name="diagnosis" type="text" /></label>
+                <label>Prescription:<input name="prescription" type="text" /></label>
+                <label>Test Results:<input name="testResults" type="text" /></label>
+                <label>Visit Date (YYYY-MM-DD):<input name="visitDate" type="text" required /></label>
+                <button type="submit">Add Medical Record</button>
+            </form>
+        </section>
+
+        <!-- 5. Billing Service -->
+        <section>
+            <h2>Billing Service</h2>
+            <form id="bill-form" autocomplete="off">
+                <label>Appointment ID:<input name="appointmentId" type="number" required /></label>
+                <label>Amount:<input name="amount" type="number" required step="0.01" /></label>
+                <label>Payment Method:<input name="paymentMethod" type="text" /></label>
+                <button type="submit">Generate Bill</button>
+            </form>
+            <form id="pay-form" autocomplete="off">
+                <label>Bill ID:<input name="billId" type="number" required /></label>
+                <label>Payment Method:<input name="paymentMethod" type="text" /></label>
+                <button type="submit">Mark as Paid</button>
+            </form>
+            <form id="claim-form" autocomplete="off">
+                <label>Bill ID:<input name="billId" type="number" required /></label>
+                <label>Insurance Claim #: <input name="insuranceClaimNumber" type="text" required /></label>
+                <button type="submit">Update Claim</button>
+            </form>
+        </section>
+
+        <section id="response-section">
+            <h2>API Response</h2>
+            <pre id="api-response"></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Healthcare Microservices Demo</p>
+    </footer>
+
+    <script src="/app.js"></script>
+</body>
+</html>

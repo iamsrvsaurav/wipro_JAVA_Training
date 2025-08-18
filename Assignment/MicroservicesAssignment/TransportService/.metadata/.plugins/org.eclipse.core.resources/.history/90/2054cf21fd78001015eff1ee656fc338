@@ -1,0 +1,8 @@
+package com.example.vehicle_service.model;
+
+
+public class Vehicle {
+    private String id;
+    private String model;
+    private String type;
+}

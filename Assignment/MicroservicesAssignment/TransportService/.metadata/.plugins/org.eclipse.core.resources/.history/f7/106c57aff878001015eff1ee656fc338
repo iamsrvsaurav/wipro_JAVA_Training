@@ -1,0 +1,30 @@
+package com.example.vehicle_service.service;
+
+package com.example.vehicleservice.service;
+
+import org.springframework.stereotype.Service;
+
+import java.util.Arrays;
+import java.util.List;
+
+@Service
+public class VehicleService {
+
+    private final List<Vehicle> vehicles = Arrays.asList(
+            new Vehicle("V1", "Toyota Prius", "Car"),
+            new Vehicle("V2", "Honda Civic", "Car"),
+            new Vehicle("V3", "Volvo FH", "Truck")
+    );
+
+    public List<Vehicle> getAllVehicles() {
+        return vehicles;
+    }
+
+    public Vehicle getVehicleById(String id) {
+        return vehicles.stream()
+                .filter(v -> v.getId().equalsIgnoreCase(id))
+                .findFirst()
+                .orElse(null);
+    }
+}
+

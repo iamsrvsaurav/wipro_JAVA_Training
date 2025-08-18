@@ -1,0 +1,53 @@
+package com.example.vehicle_service.controller;
+
+import org.springframework.web.bind.annotation.*;
+
+import com.example.vehicle_service.entity.Vehicle;
+import com.example.vehicle_service.repository.VehicleRepository;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/vehicles")
+public class VehicleController {
+
+    private final VehicleRepository vehicleRepository;
+
+    public VehicleController(VehicleRepository vehicleRepository) {
+        this.vehicleRepository = vehicleRepository;
+    }
+
+    @GetMapping
+    public List<Vehicle> getAllVehicles() {
+        return vehicleRepository.findAll();
+    }
+
+    @PostMapping
+    public Vehicle addVehicle(@RequestBody Vehicle vehicle) {
+        return vehicleRepository.save(vehicle);
+    }
+
+    @GetMapping("/{id}")
+    public Vehicle getVehicleById(@PathVariable Long id) {
+        return vehicleRepository.findById(id).orElse(null);
+    }
+
+    @PutMapping("/{id}")
+    public Vehicle updateVehicle(@PathVariable Long id, @RequestBody Vehicle updatedVehicle) {
+        return vehicleRepository.findById(id)
+                .map(vehicle -> {
+                    vehicle.setVehicleNumber(updatedVehicle.getVehicleNumber());
+                    vehicle.setType(updatedVehicle.getType());
+                    vehicle.setCapacity(updatedVehicle.getCapacity());
+                    vehicle.setStatus(updatedVehicle.getStatus());
+                    return vehicleRepository.save(vehicle);
+                })
+                .orElse(null);
+    }
+
+    @DeleteMapping("/{id}")
+    public String deleteVehicle(@PathVariable Long id) {
+        vehicleRepository.deleteById(id);
+        return "Vehicle deleted with ID: " + id;
+    }
+}

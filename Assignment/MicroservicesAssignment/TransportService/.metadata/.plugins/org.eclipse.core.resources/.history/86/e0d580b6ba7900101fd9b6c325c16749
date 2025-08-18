@@ -1,0 +1,34 @@
+package com.example.vehicle_service.controller;
+
+import com.example.vehicleservice.model.Vehicle;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.*;
+
+@RestController
+@RequestMapping("/vehicles")
+public class VehicleController {
+
+    private final Map<String, Vehicle> vehicles = new HashMap<>();
+
+    public VehicleController() {
+        vehicles.put("1", new Vehicle("1", "Tesla Model S", "Electric"));
+        vehicles.put("2", new Vehicle("2", "Toyota Corolla", "Petrol"));
+    }
+
+    @GetMapping
+    public Collection<Vehicle> getAllVehicles() {
+        return vehicles.values();
+    }
+
+    @GetMapping("/{id}")
+    public Vehicle getVehicleById(@PathVariable String id) {
+        return vehicles.get(id);
+    }
+
+    @PostMapping
+    public Vehicle addVehicle(@RequestBody Vehicle vehicle) {
+        vehicles.put(vehicle.getId(), vehicle);
+        return vehicle;
+    }
+}
